@@ -339,4 +339,9 @@ config AT_RAINMAKER_COMMAND_SUPPORT
     default n
     depends on AT_ENABLE
     depends on IDF_TARGET_ESP32C3
+
+config AT_SSCMA_COMMAND_SUPPORT
+    bool "AT SSCMA command support."
+    default n
+    depends on AT_ENABLE
 endmenu

@@ -90,6 +90,14 @@ void esp_at_main_preprocess(void);
 bool esp_at_rainmaker_cmd_regist(void);
 #endif
 
+#ifdef CONFIG_AT_SSCMA_COMMAND_SUPPORT
+/**
+ * @brief regist at sscma command set. If not,you can not use AT sscma command
+ *
+ */
+bool esp_at_sscma_cmd_regist(void);
+#endif
+
 /**
  * @brief init storage mode of at parameters
  */

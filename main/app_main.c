@@ -252,5 +252,11 @@ void app_main(void)
     }
 #endif
 
+#ifdef CONFIG_AT_SSCMA_COMMAND_SUPPORT
+    if(esp_at_sscma_cmd_regist() == false) {
+        printf("regist sscma cmd fail\r\n");
+    }
+#endif
+
     at_custom_init();
 }
